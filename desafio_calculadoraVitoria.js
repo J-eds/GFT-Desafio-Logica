@@ -1,24 +1,24 @@
 let nivel = " "
-let resultado = calcularVitoriaDerrota(60,20)
+let resultado = calcularVitoriaDerrota(60,10)
 console.log(resultado)
 
 function calcularVitoriaDerrota(vitorias,derrotas){
 
     let saldoRanked = vitorias - derrotas
 
-    if (vitorias < 10) {
+    if (saldoRanked < 10) {
         nivel = 'Ferro';
-    } else if (vitorias >= 11 && vitorias <= 20) {
+    } else if (saldoRanked >= 11 && saldoRanked <= 20) {
         nivel = 'Bronze';
-    } else if (vitorias >= 21 && vitorias <= 50) {
+    } else if (saldoRanked >= 21 && saldoRanked <= 50) {
         nivel = 'Prata';
-    } else if (vitorias >= 51 && vitorias <= 80) {
+    } else if (saldoRanked >= 51 && saldoRanked <= 80) {
         nivel = 'Ouro';
-    } else if (vitorias >= 81 && vitorias <= 90) {
+    } else if (saldoRanked >= 81 && saldoRanked <= 90) {
         nivel = 'Diamante';
-    } else if (vitorias >= 91 && vitorias <= 100) {
+    } else if (saldoRanked >= 91 && saldoRanked <= 100) {
         nivel = 'Lendário';
-    } else if (vitorias >= 101) {
+    } else if (saldoRanked >= 101) {
         nivel = 'Imortal';
     }
 
